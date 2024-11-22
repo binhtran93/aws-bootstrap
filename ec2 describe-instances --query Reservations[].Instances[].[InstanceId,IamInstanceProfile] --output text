@@ -1,0 +1,162 @@
+{
+    "StackEvents": [
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:360118472363:stack/awsbootstrap/252d4d20-a7c0-11ef-9a53-064be8ff9b69",
+            "EventId": "56684c50-a7c0-11ef-b6d8-0abc8a28bbed",
+            "StackName": "awsbootstrap",
+            "LogicalResourceId": "awsbootstrap",
+            "PhysicalResourceId": "arn:aws:cloudformation:us-west-2:360118472363:stack/awsbootstrap/252d4d20-a7c0-11ef-9a53-064be8ff9b69",
+            "ResourceType": "AWS::CloudFormation::Stack",
+            "Timestamp": "2024-11-21T04:23:19.683000+00:00",
+            "ResourceStatus": "ROLLBACK_FAILED",
+            "ResourceStatusReason": "The following resource(s) failed to delete: [InstanceRole]. "
+        },
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:360118472363:stack/awsbootstrap/252d4d20-a7c0-11ef-9a53-064be8ff9b69",
+            "EventId": "SecurityGroup-DELETE_COMPLETE-2024-11-21T04:23:19.475Z",
+            "StackName": "awsbootstrap",
+            "LogicalResourceId": "SecurityGroup",
+            "PhysicalResourceId": "awsbootstrap-SecurityGroup-TS2knYkhtrWU",
+            "ResourceType": "AWS::EC2::SecurityGroup",
+            "Timestamp": "2024-11-21T04:23:19.475000+00:00",
+            "ResourceStatus": "DELETE_COMPLETE",
+            "ResourceProperties": "{\"GroupDescription\":\"Internal Security group for awsbootstrap\",\"SecurityGroupIngress\":[{\"CidrIp\":\"0.0.0.0/0\",\"FromPort\":\"8080\",\"ToPort\":\"8080\",\"IpProtocol\":\"tcp\"},{\"CidrIp\":\"0.0.0.0/0\",\"FromPort\":\"22\",\"ToPort\":\"22\",\"IpProtocol\":\"tcp\"}],\"Tags\":[{\"Value\":\"awsbootstrap\",\"Key\":\"Name\"}]}"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:360118472363:stack/awsbootstrap/252d4d20-a7c0-11ef-9a53-064be8ff9b69",
+            "EventId": "InstanceRole-DELETE_FAILED-2024-11-21T04:23:19.326Z",
+            "StackName": "awsbootstrap",
+            "LogicalResourceId": "InstanceRole",
+            "PhysicalResourceId": "awsbootstrap-InstanceRole-3Fsi3aYbL8Vm",
+            "ResourceType": "AWS::IAM::Role",
+            "Timestamp": "2024-11-21T04:23:19.326000+00:00",
+            "ResourceStatus": "DELETE_FAILED",
+            "ResourceStatusReason": "Resource handler returned message: \"User: arn:aws:iam::360118472363:user/vpc-demo is not authorized to perform: iam:DetachRolePolicy on resource: role awsbootstrap-InstanceRole-3Fsi3aYbL8Vm because no identity-based policy allows the iam:DetachRolePolicy action (Service: Iam, Status Code: 403, Request ID: 49d98570-bad4-439b-acfa-32108121a863)\" (RequestToken: e0db76c4-9e80-7dfa-b46e-18a024b3350c, HandlerErrorCode: AccessDenied)",
+            "ResourceProperties": "{\"ManagedPolicyArns\":[\"arn:aws:iam::aws:policy/CloudWatchFullAccess\"],\"AssumeRolePolicyDocument\":{\"Version\":\"2012-10-17\",\"Statement\":{\"Action\":\"sts:AssumeRole\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":[\"ec2.amazonaws.com\"]}}},\"Tags\":[{\"Value\":\"awsbootstrap\",\"Key\":\"Name\"}]}"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:360118472363:stack/awsbootstrap/252d4d20-a7c0-11ef-9a53-064be8ff9b69",
+            "EventId": "InstanceRole-DELETE_IN_PROGRESS-2024-11-21T04:23:18.336Z",
+            "StackName": "awsbootstrap",
+            "LogicalResourceId": "InstanceRole",
+            "PhysicalResourceId": "awsbootstrap-InstanceRole-3Fsi3aYbL8Vm",
+            "ResourceType": "AWS::IAM::Role",
+            "Timestamp": "2024-11-21T04:23:18.336000+00:00",
+            "ResourceStatus": "DELETE_IN_PROGRESS",
+            "ResourceProperties": "{\"ManagedPolicyArns\":[\"arn:aws:iam::aws:policy/CloudWatchFullAccess\"],\"AssumeRolePolicyDocument\":{\"Version\":\"2012-10-17\",\"Statement\":{\"Action\":\"sts:AssumeRole\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":[\"ec2.amazonaws.com\"]}}},\"Tags\":[{\"Value\":\"awsbootstrap\",\"Key\":\"Name\"}]}"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:360118472363:stack/awsbootstrap/252d4d20-a7c0-11ef-9a53-064be8ff9b69",
+            "EventId": "SecurityGroup-DELETE_IN_PROGRESS-2024-11-21T04:23:18.312Z",
+            "StackName": "awsbootstrap",
+            "LogicalResourceId": "SecurityGroup",
+            "PhysicalResourceId": "awsbootstrap-SecurityGroup-TS2knYkhtrWU",
+            "ResourceType": "AWS::EC2::SecurityGroup",
+            "Timestamp": "2024-11-21T04:23:18.312000+00:00",
+            "ResourceStatus": "DELETE_IN_PROGRESS",
+            "ResourceProperties": "{\"GroupDescription\":\"Internal Security group for awsbootstrap\",\"SecurityGroupIngress\":[{\"CidrIp\":\"0.0.0.0/0\",\"FromPort\":\"8080\",\"ToPort\":\"8080\",\"IpProtocol\":\"tcp\"},{\"CidrIp\":\"0.0.0.0/0\",\"FromPort\":\"22\",\"ToPort\":\"22\",\"IpProtocol\":\"tcp\"}],\"Tags\":[{\"Value\":\"awsbootstrap\",\"Key\":\"Name\"}]}"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:360118472363:stack/awsbootstrap/252d4d20-a7c0-11ef-9a53-064be8ff9b69",
+            "EventId": "54794d90-a7c0-11ef-ad77-02278992b85d",
+            "StackName": "awsbootstrap",
+            "LogicalResourceId": "awsbootstrap",
+            "PhysicalResourceId": "arn:aws:cloudformation:us-west-2:360118472363:stack/awsbootstrap/252d4d20-a7c0-11ef-9a53-064be8ff9b69",
+            "ResourceType": "AWS::CloudFormation::Stack",
+            "Timestamp": "2024-11-21T04:23:16.447000+00:00",
+            "ResourceStatus": "ROLLBACK_IN_PROGRESS",
+            "ResourceStatusReason": "The following resource(s) failed to create: [InstanceRole, SecurityGroup]. Rollback requested by user."
+        },
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:360118472363:stack/awsbootstrap/252d4d20-a7c0-11ef-9a53-064be8ff9b69",
+            "EventId": "SecurityGroup-CREATE_FAILED-2024-11-21T04:23:16.163Z",
+            "StackName": "awsbootstrap",
+            "LogicalResourceId": "SecurityGroup",
+            "PhysicalResourceId": "awsbootstrap-SecurityGroup-TS2knYkhtrWU",
+            "ResourceType": "AWS::EC2::SecurityGroup",
+            "Timestamp": "2024-11-21T04:23:16.163000+00:00",
+            "ResourceStatus": "CREATE_FAILED",
+            "ResourceStatusReason": "Resource creation cancelled",
+            "ResourceProperties": "{\"GroupDescription\":\"Internal Security group for awsbootstrap\",\"SecurityGroupIngress\":[{\"CidrIp\":\"0.0.0.0/0\",\"FromPort\":\"8080\",\"ToPort\":\"8080\",\"IpProtocol\":\"tcp\"},{\"CidrIp\":\"0.0.0.0/0\",\"FromPort\":\"22\",\"ToPort\":\"22\",\"IpProtocol\":\"tcp\"}],\"Tags\":[{\"Value\":\"awsbootstrap\",\"Key\":\"Name\"}]}"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:360118472363:stack/awsbootstrap/252d4d20-a7c0-11ef-9a53-064be8ff9b69",
+            "EventId": "InstanceRole-CREATE_FAILED-2024-11-21T04:23:15.061Z",
+            "StackName": "awsbootstrap",
+            "LogicalResourceId": "InstanceRole",
+            "PhysicalResourceId": "awsbootstrap-InstanceRole-3Fsi3aYbL8Vm",
+            "ResourceType": "AWS::IAM::Role",
+            "Timestamp": "2024-11-21T04:23:15.061000+00:00",
+            "ResourceStatus": "CREATE_FAILED",
+            "ResourceStatusReason": "Resource handler returned message: \"Encountered a permissions error performing a tagging operation, please add required tag permissions. See https://repost.aws/knowledge-center/cloudformation-tagging-permission-error for how to resolve. Resource handler returned message: \"User: arn:aws:iam::360118472363:user/vpc-demo is not authorized to perform: iam:CreateRole on resource: arn:aws:iam::360118472363:role/awsbootstrap-InstanceRole-3Fsi3aYbL8Vm because no identity-based policy allows the iam:CreateRole action (Service: Iam, Status Code: 403, Request ID: e25d3d2f-f312-4fa1-b508-ad65fbb8f8df)\"\" (RequestToken: ffb22d29-ef99-297d-76e7-59008268c759, HandlerErrorCode: UnauthorizedTaggingOperation)",
+            "ResourceProperties": "{\"ManagedPolicyArns\":[\"arn:aws:iam::aws:policy/CloudWatchFullAccess\"],\"AssumeRolePolicyDocument\":{\"Version\":\"2012-10-17\",\"Statement\":{\"Action\":\"sts:AssumeRole\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":[\"ec2.amazonaws.com\"]}}},\"Tags\":[{\"Value\":\"awsbootstrap\",\"Key\":\"Name\"}]}"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:360118472363:stack/awsbootstrap/252d4d20-a7c0-11ef-9a53-064be8ff9b69",
+            "EventId": "InstanceRole-CREATE_IN_PROGRESS-2024-11-21T04:23:14.773Z",
+            "StackName": "awsbootstrap",
+            "LogicalResourceId": "InstanceRole",
+            "PhysicalResourceId": "awsbootstrap-InstanceRole-3Fsi3aYbL8Vm",
+            "ResourceType": "AWS::IAM::Role",
+            "Timestamp": "2024-11-21T04:23:14.773000+00:00",
+            "ResourceStatus": "CREATE_IN_PROGRESS",
+            "ResourceStatusReason": "Resource creation Initiated",
+            "ResourceProperties": "{\"ManagedPolicyArns\":[\"arn:aws:iam::aws:policy/CloudWatchFullAccess\"],\"AssumeRolePolicyDocument\":{\"Version\":\"2012-10-17\",\"Statement\":{\"Action\":\"sts:AssumeRole\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":[\"ec2.amazonaws.com\"]}}},\"Tags\":[{\"Value\":\"awsbootstrap\",\"Key\":\"Name\"}]}"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:360118472363:stack/awsbootstrap/252d4d20-a7c0-11ef-9a53-064be8ff9b69",
+            "EventId": "InstanceRole-afbede5b-3b9d-42bc-9fe9-40bb8ba33ca2",
+            "StackName": "awsbootstrap",
+            "LogicalResourceId": "InstanceRole",
+            "PhysicalResourceId": "",
+            "ResourceType": "AWS::IAM::Role",
+            "Timestamp": "2024-11-21T04:23:14.730000+00:00",
+            "ResourceStatus": "CREATE_IN_PROGRESS",
+            "ResourceStatusReason": "Encountered a permissions error performing a tagging operation, please add required tag permissions. See https://repost.aws/knowledge-center/cloudformation-tagging-permission-error for how to resolve. Resource handler returned message: \"User: arn:aws:iam::360118472363:user/vpc-demo is not authorized to perform: iam:CreateRole on resource: arn:aws:iam::360118472363:role/awsbootstrap-InstanceRole-3Fsi3aYbL8Vm because no identity-based policy allows the iam:CreateRole action (Service: Iam, Status Code: 403, Request ID: e25d3d2f-f312-4fa1-b508-ad65fbb8f8df)\""
+        },
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:360118472363:stack/awsbootstrap/252d4d20-a7c0-11ef-9a53-064be8ff9b69",
+            "EventId": "InstanceRole-CREATE_IN_PROGRESS-2024-11-21T04:23:13.804Z",
+            "StackName": "awsbootstrap",
+            "LogicalResourceId": "InstanceRole",
+            "PhysicalResourceId": "",
+            "ResourceType": "AWS::IAM::Role",
+            "Timestamp": "2024-11-21T04:23:13.804000+00:00",
+            "ResourceStatus": "CREATE_IN_PROGRESS",
+            "ResourceProperties": "{\"ManagedPolicyArns\":[\"arn:aws:iam::aws:policy/CloudWatchFullAccess\"],\"AssumeRolePolicyDocument\":{\"Version\":\"2012-10-17\",\"Statement\":{\"Action\":\"sts:AssumeRole\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":[\"ec2.amazonaws.com\"]}}},\"Tags\":[{\"Value\":\"awsbootstrap\",\"Key\":\"Name\"}]}"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:360118472363:stack/awsbootstrap/252d4d20-a7c0-11ef-9a53-064be8ff9b69",
+            "EventId": "SecurityGroup-CREATE_IN_PROGRESS-2024-11-21T04:23:13.801Z",
+            "StackName": "awsbootstrap",
+            "LogicalResourceId": "SecurityGroup",
+            "PhysicalResourceId": "",
+            "ResourceType": "AWS::EC2::SecurityGroup",
+            "Timestamp": "2024-11-21T04:23:13.801000+00:00",
+            "ResourceStatus": "CREATE_IN_PROGRESS",
+            "ResourceProperties": "{\"GroupDescription\":\"Internal Security group for awsbootstrap\",\"SecurityGroupIngress\":[{\"CidrIp\":\"0.0.0.0/0\",\"FromPort\":\"8080\",\"ToPort\":\"8080\",\"IpProtocol\":\"tcp\"},{\"CidrIp\":\"0.0.0.0/0\",\"FromPort\":\"22\",\"ToPort\":\"22\",\"IpProtocol\":\"tcp\"}],\"Tags\":[{\"Value\":\"awsbootstrap\",\"Key\":\"Name\"}]}"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:360118472363:stack/awsbootstrap/252d4d20-a7c0-11ef-9a53-064be8ff9b69",
+            "EventId": "517890b0-a7c0-11ef-a4fc-0a13f5d07c57",
+            "StackName": "awsbootstrap",
+            "LogicalResourceId": "awsbootstrap",
+            "PhysicalResourceId": "arn:aws:cloudformation:us-west-2:360118472363:stack/awsbootstrap/252d4d20-a7c0-11ef-9a53-064be8ff9b69",
+            "ResourceType": "AWS::CloudFormation::Stack",
+            "Timestamp": "2024-11-21T04:23:11.400000+00:00",
+            "ResourceStatus": "CREATE_IN_PROGRESS",
+            "ResourceStatusReason": "User Initiated"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:360118472363:stack/awsbootstrap/252d4d20-a7c0-11ef-9a53-064be8ff9b69",
+            "EventId": "4de271a0-a7c0-11ef-9ce9-06d488f07943",
+            "StackName": "awsbootstrap",
+            "LogicalResourceId": "awsbootstrap",
+            "PhysicalResourceId": "arn:aws:cloudformation:us-west-2:360118472363:stack/awsbootstrap/252d4d20-a7c0-11ef-9a53-064be8ff9b69",
+            "ResourceType": "AWS::CloudFormation::Stack",
+            "Timestamp": "2024-11-21T04:23:05.495000+00:00",
+            "ResourceStatus": "REVIEW_IN_PROGRESS",
+            "ResourceStatusReason": "User Initiated"
+        }
+    ]
+}
